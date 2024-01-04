@@ -21,12 +21,13 @@ function App() {
   };
   return (
     <div className="font-changa text-center text-6xl bg-[#141316] text-orange-500 pt-5 ">
-      <h1>Weather Status</h1> <hr />
+      <h1>Weather_Status</h1> <hr />
       <div className="bg-[#141316] h-screen flex flex-col justify-center items-center font-Changa ">
         <div className="mb-3 w-[500px] text-[25px] font-changa flex justify-center items-center">
           <input
             type="text"
             value={location}
+            placeholder="enter the location"
             onChange={(e) => setLocation(e.target.value)}
             className=" hover:bg-gray-300 px-4 py-3 w-[70%] outline-none border-none rounded-md text-black mt-2"
           />
@@ -44,7 +45,7 @@ function App() {
             <MainSection place={location} data={weatherData} />
           ) : (
             <p className="text-red-400">
-              <sup>*</sup>Please enter your Location
+              <sup>*</sup>Please enter your Location<sup>*</sup>
             </p>
           )
         ) : null}
