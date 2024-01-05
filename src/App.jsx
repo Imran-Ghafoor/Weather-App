@@ -20,20 +20,20 @@ function App() {
     }
   };
   return (
-    <div className="font-changa text-center text-6xl bg-[#141316] text-orange-500 pt-5 ">
-      <h1>Weather_Status</h1> <hr />
+    <div className="font-changa text-center sm:w-full bg-[#141316] text-orange-500 pt-5 ">
+      <h1 className="text-4xl">Weather_Status</h1> <hr />
       <div className="bg-[#141316] h-screen flex flex-col justify-center items-center font-Changa ">
-        <div className="mb-3 w-[500px] text-[25px] font-changa flex justify-center items-center">
+        <div className="mb-3 sm:w-max max-auto lg:w-[500px] md:w-[500px] text-[25px] font-changa flex justify-center items-center">
           <input
             type="text"
             value={location}
             placeholder="enter the location"
             onChange={(e) => setLocation(e.target.value)}
-            className=" hover:bg-gray-300 px-4 py-3 w-[70%] outline-none border-none rounded-md text-black mt-2"
+            className=" hover:bg-gray-300 px-4 py-3 w-[70%] outline-none border-none rounded-md text-black mt-2  "
           />
           <button
             type="submit"
-            className="py-3 bg-blue-800 text-white font-changa w-[28%] outline-none border-none rounded-md hover:text-orange-500 mt-2"
+            className="py-3 bg-blue-800 text-white font-changa w-[28%] outline-none border-none rounded-md hover:text-orange-500 mt-2 lg:w-[28%]"
             onClick={() => fetchData()}
           >
             SUBMIT
