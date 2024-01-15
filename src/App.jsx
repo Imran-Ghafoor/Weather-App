@@ -1,3 +1,4 @@
+// weather App
 import { useState } from "react";
 import axios from "axios";
 import MainSection from "./components/MainSection";
